@@ -1,0 +1,27 @@
+[package]
+name = "ai-file-sync"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A file synchronization tool for AI models"
+
+[dependencies]
+notify = "5.1.0"           # For file watching
+reqwest = { version = "0.11", features = ["json", "multipart"] }  # HTTP client
+tokio = { version = "1.28", features = ["full"] }  # Async runtime
+serde = { version = "1.0", features = ["derive"] }  # Serialization
+serde_json = "1.0"         # JSON support
+aes-gcm = "0.10.1"         # AES-256 encryption
+rand = "0.8.5"             # For generating random values
+clap = { version = "4.3", features = ["derive"] }  # Command line argument parsing
+log = "0.4"                # Logging
+env_logger = "0.10"        # Logging implementation
+anyhow = "1.0"             # Error handling
+dotenv = "0.15"            # Environment variable management
+base64 = "0.21"            # Base64 encoding/decoding
+sha2 = "0.10"              # Hashing
+google-drive3 = "5.0"      # Google Drive API
+rusoto_core = "0.48"       # AWS SDK
+rusoto_s3 = "0.48"         # AWS S3
+flate2 = "1.0"             # Compression
+walkdir = "2.3"            # Directory traversal

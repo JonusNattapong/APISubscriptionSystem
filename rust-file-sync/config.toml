@@ -1,0 +1,20 @@
+# AI Model File Synchronization Tool Configuration
+
+# Base path for remote storage
+remote_base_path = "ai-models"
+
+# Google Drive configuration
+[google_drive]
+folder_id = "your-google-drive-folder-id"
+credentials_file = "credentials.json"
+
+# AWS S3 configuration
+[s3]
+bucket = "your-s3-bucket"
+region = "us-east-1"
+access_key = "your-aws-access-key"
+secret_key = "your-aws-secret-key"
+
+# Encryption configuration
+[encryption]
+key = "your-encryption-key-must-be-strong-and-secure"
